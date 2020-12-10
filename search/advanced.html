@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced search</title>
+        <link href="styles.css" rel="stylesheet">
+        <style>
+            body
+            {
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+            }
+
+            .head
+            {
+                height: 60px;
+                padding-left: 10px;
+                padding-left: 10px;
+                background-color: #f1f1f1;
+            }
+
+            .main
+            {
+                max-width: 1140px;
+                min-width:200px;
+                margin: 40px 2% 0 45px;
+            }
+
+            .col1
+            {
+                min-width: 170px;
+                width: 16%;
+                display:inline-block;
+            }
+
+
+            .col2
+            {
+                height: 42px;
+                width: 50%;
+                display:inline-block;
+            }
+
+            .col3
+            {
+            
+                width: 33%;
+                display: inline-block;
+                font-size: 11px;
+                padding-left: 15px;
+                vertical-align: middle;
+            }
+
+            .text
+            {
+                height: 25px;
+                width: 100%;
+                padding-left:8px;
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+            }
+
+            .text:focus
+            {
+                outline: none !important;
+                border:1px solid #4885ed;
+            }
+
+            .inst
+            {
+                color:#555;
+            }
+
+            .exp
+            {
+                color:#666;
+                font-family: monospace;
+            }
+
+            .abutton
+            {
+                box-shadow: none;
+                background-color: #4d90fe;
+                border-radius:2px;
+                width:118px;
+                height:28px;
+                padding:0px 12px;
+                border: 1px;
+                margin: 10px 0px;
+
+
+                font-size: 11px;
+                font-weight: bold;
+                font-family: arial;
+                color: white;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="head">
+
+            <ul>
+                <a href="index.html">
+                    <img src="https://www.google.com.sg/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googleicon" style="float: left;height: 30px;padding-left: 5px;">
+                </a>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="index.html">Search</a></li>
+            </ul>
+        </div>
+
+        <div style="color:#d93025;font-size: 20px;margin: 25px 35px;">
+            <label style="margin-left: 10px;">Advanced Search</label>
+        </div>
+
+        <div style="border-bottom: 1px solid #ebebeb;"></div>
+
+        <div class="main">
+            <form action="https://google.com/search">
+                <div style="padding-bottom: 20px;">
+                    <div class="col1">
+                        <span style="font-size: 16px;">Find pages with...</span>
+                    </div>
+
+                    <div style="display: inline-block;width: 50%;"></div>
+
+                    <div style="display:inline-block;color:#777;font-size:13px;">
+                        <span><b>To do this in the search box.</b></span>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="col1">
+                        <span>all these words:</span>
+                    </div>
+
+                    <div class="col2">
+                        <input class="text" type="text" name="as_q">
+                    </div>
+
+                    <div class="col3">
+                        <span class="inst">Type the important words:</span>
+                        <span class="exp"> tri-colour rat terrier</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col1">
+                        <span>this exact word or phrase:</span>
+                    </div>
+
+                    <div class="col2">
+                        <input class="text" type="text" name="as_epq">
+                    </div>
+
+                    <div class="col3">
+                        <span class="inst">Put exact words in quotes:</span>
+                        <span class="exp"> "rat terrier"</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col1">
+                        <span>any of these words:</span>
+                    </div>
+
+                    <div class="col2">
+                        <input class="text" type="text" name="as_oq">
+                    </div>
+
+                    <div class="col3">
+                        <span class="inst">Type OR between all the words you want:</span>
+                        <span class="exp"> miniature OR standard</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col1">
+                        <span>none of these words:</span>
+                    </div>
+
+                    <div class="col2">
+                        <input class="text" type="text" name="as_eq">
+                    </div>
+
+                    <div class="col3">
+                        <span class="inst">Put a minus sign just before words that you don't want:</span>
+                        <br><span class="exp">-rodent, -"Jack Russell"</span>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div style="border-bottom: 1px solid #ebebeb;"></div>
+
+                <br>
+
+                <div class="col1"></div>
+
+                <div class="col2">
+                <input class="abutton" type="submit" value="Advanced Search" style="float: right;">
+                </div>
+
+            </form>
+        </div>
+
+    </body>
+</html>
